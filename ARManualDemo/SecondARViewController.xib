@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondARViewController">
+            <connections>
+                <outlet property="arContainer" destination="uNN-46-aVm" id="JFd-bQ-GBO"/>
+                <outlet property="btnBack" destination="Ulq-3V-LbQ" id="v2H-7G-glb"/>
+                <outlet property="btnPause" destination="lpr-zV-I7z" id="4am-cu-Bwx"/>
+                <outlet property="btnRecord" destination="gGH-aa-UId" id="sBD-j5-Kbp"/>
+                <outlet property="btnStop" destination="Pio-C1-VuN" id="Id3-b9-1TR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uNN-46-aVm" userLabel="arContainer">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <viewLayoutGuide key="safeArea" id="lXy-x6-VXF"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGH-aa-UId">
+                    <rect key="frame" x="100" y="537" width="175" height="30"/>
+                    <state key="normal" title="record"/>
+                    <connections>
+                        <action selector="startRecord:" destination="-1" eventType="touchUpInside" id="QiA-ra-UUB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ulq-3V-LbQ">
+                    <rect key="frame" x="10" y="30" width="34" height="30"/>
+                    <state key="normal" title="back"/>
+                    <connections>
+                        <action selector="backClicked:" destination="-1" eventType="touchUpInside" id="HVD-vt-qQ3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpr-zV-I7z" userLabel="Btn Pause">
+                    <rect key="frame" x="100" y="318" width="175" height="30"/>
+                    <state key="normal" title="pause"/>
+                    <connections>
+                        <action selector="pauseRecord:" destination="-1" eventType="touchUpInside" id="EFJ-AF-ziQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pio-C1-VuN" userLabel="stop">
+                    <rect key="frame" x="100" y="318" width="175" height="30"/>
+                    <state key="normal" title="stop"/>
+                    <connections>
+                        <action selector="stopRecord:" destination="-1" eventType="touchUpInside" id="im0-oz-mdH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ulq-3V-LbQ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="24C-DT-u0P"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="gGH-aa-UId" secondAttribute="bottom" constant="100" id="4Ok-41-tA0"/>
+                <constraint firstItem="Pio-C1-VuN" firstAttribute="top" secondItem="lpr-zV-I7z" secondAttribute="bottom" constant="10" id="5ny-r2-zPM"/>
+                <constraint firstItem="lpr-zV-I7z" firstAttribute="width" secondItem="gGH-aa-UId" secondAttribute="width" id="HWA-Zz-QjQ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="gGH-aa-UId" secondAttribute="trailing" constant="100" id="LhX-cn-m4U"/>
+                <constraint firstItem="gGH-aa-UId" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MZN-Rj-GH0"/>
+                <constraint firstItem="lpr-zV-I7z" firstAttribute="top" secondItem="gGH-aa-UId" secondAttribute="bottom" constant="10" id="N4v-MH-KNo"/>
+                <constraint firstItem="lpr-zV-I7z" firstAttribute="leading" secondItem="gGH-aa-UId" secondAttribute="leading" id="Qqc-51-rmg"/>
+                <constraint firstItem="Ulq-3V-LbQ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="TUS-nZ-mVB"/>
+                <constraint firstItem="gGH-aa-UId" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="USc-5t-gyd"/>
+                <constraint firstItem="Pio-C1-VuN" firstAttribute="width" secondItem="lpr-zV-I7z" secondAttribute="width" id="dHO-Bf-sk8"/>
+                <constraint firstItem="Pio-C1-VuN" firstAttribute="leading" secondItem="lpr-zV-I7z" secondAttribute="leading" id="l3z-IT-G7S"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

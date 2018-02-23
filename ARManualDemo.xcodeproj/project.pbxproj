@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F3B45E920271B3200834EF4 /* ARVideoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3B45E820271B2900834EF4 /* ARVideoKit.framework */; };
+		6F3B45EA20271B3200834EF4 /* ARVideoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3B45E820271B2900834EF4 /* ARVideoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6F76F58E20287C1700C8CE44 /* BtSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F76F58D20287C1700C8CE44 /* BtSceneView.swift */; };
+		6F76F592202884E500C8CE44 /* SecondARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F76F590202884E500C8CE44 /* SecondARViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6F76F593202884E500C8CE44 /* SecondARViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F76F591202884E500C8CE44 /* SecondARViewController.xib */; };
+		6F8CBE77202B139100FC50AA /* MyARSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8CBE76202B139100FC50AA /* MyARSceneView.m */; };
+		6FD6A11A20244A1F003F82A8 /* BTSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD6A11920244A1F003F82A8 /* BTSceneView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6FF2C70A1FA30F7800895265 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF2C7091FA30F7800895265 /* AppDelegate.m */; };
 		6FF2C70D1FA30F7800895265 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF2C70C1FA30F7800895265 /* ViewController.m */; };
 		6FF2C7101FA30F7800895265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF2C70E1FA30F7800895265 /* Main.storyboard */; };
@@ -15,9 +22,29 @@
 		6FF2C7181FA30F7800895265 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF2C7171FA30F7800895265 /* main.m */; };
 		6FF2C7221FA30F7800895265 /* ARManualDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF2C7211FA30F7800895265 /* ARManualDemoTests.m */; };
 		6FF2C72D1FA30F7800895265 /* ARManualDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF2C72C1FA30F7800895265 /* ARManualDemoUITests.m */; };
+		6FF2C73B1FA30FC100895265 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF2C73A1FA30FC100895265 /* Storyboard.storyboard */; };
+		6FF2C7401FA3108400895265 /* ARSCNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FF2C73E1FA3108400895265 /* ARSCNViewController.xib */; };
+		6FF2C7431FA322E700895265 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF2C7421FA322C100895265 /* ARKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		6FF2C7451FA322FA00895265 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF2C7441FA322EF00895265 /* SceneKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		6FF2C7481FA32E9200895265 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF2C7471FA32E9200895265 /* art.scnassets */; };
+		6FF88F2F202714FB00C83BF1 /* ARSCNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF88F2E202714FB00C83BF1 /* ARSCNViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6F3B45E720271B2900834EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F3B45E320271B2900834EF4 /* ARVideoKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FBD604DA1FA969DD00EC9804;
+			remoteInfo = ARVideoKit;
+		};
+		6F3B45EB20271B3200834EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F3B45E320271B2900834EF4 /* ARVideoKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FBD604D91FA969DD00EC9804;
+			remoteInfo = ARVideoKit;
+		};
 		6FF2C71E1FA30F7800895265 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6FF2C6FD1FA30F7800895265 /* Project object */;
@@ -34,7 +61,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6FD6A1472026F62C003F82A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6F3B45EA20271B3200834EF4 /* ARVideoKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6F3B45E320271B2900834EF4 /* ARVideoKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ARVideoKit.xcodeproj; path = "../AR_PartyNow/ARVideoKit-master/ARVideoKit.xcodeproj"; sourceTree = "<group>"; };
+		6F76F58A2028767800C8CE44 /* ARManualDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARManualDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		6F76F58D20287C1700C8CE44 /* BtSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtSceneView.swift; sourceTree = "<group>"; };
+		6F76F58F202884E500C8CE44 /* SecondARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondARViewController.h; sourceTree = "<group>"; };
+		6F76F590202884E500C8CE44 /* SecondARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondARViewController.m; sourceTree = "<group>"; };
+		6F76F591202884E500C8CE44 /* SecondARViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondARViewController.xib; sourceTree = "<group>"; };
+		6F8CBE75202B139100FC50AA /* MyARSceneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyARSceneView.h; sourceTree = "<group>"; };
+		6F8CBE76202B139100FC50AA /* MyARSceneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyARSceneView.m; sourceTree = "<group>"; };
+		6F8CBE78202C41A500FC50AA /* ArViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArViewDelegate.h; sourceTree = "<group>"; };
+		6FD6A11820244A1F003F82A8 /* BTSceneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTSceneView.h; sourceTree = "<group>"; };
+		6FD6A11920244A1F003F82A8 /* BTSceneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTSceneView.m; sourceTree = "<group>"; };
+		6FD6A120202456A9003F82A8 /* CameraOperationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraOperationDelegate.h; sourceTree = "<group>"; };
 		6FF2C7051FA30F7800895265 /* ARManualDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARManualDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF2C7081FA30F7800895265 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6FF2C7091FA30F7800895265 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +104,13 @@
 		6FF2C7281FA30F7800895265 /* ARManualDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARManualDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF2C72C1FA30F7800895265 /* ARManualDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARManualDemoUITests.m; sourceTree = "<group>"; };
 		6FF2C72E1FA30F7800895265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FF2C73A1FA30FC100895265 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ARManualDemo/Storyboard.storyboard; sourceTree = "<group>"; };
+		6FF2C73C1FA3108400895265 /* ARSCNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSCNViewController.h; sourceTree = "<group>"; };
+		6FF2C73E1FA3108400895265 /* ARSCNViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARSCNViewController.xib; sourceTree = "<group>"; };
+		6FF2C7421FA322C100895265 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		6FF2C7441FA322EF00895265 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		6FF2C7471FA32E9200895265 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		6FF88F2E202714FB00C83BF1 /* ARSCNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARSCNViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +118,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FF2C7431FA322E700895265 /* ARKit.framework in Frameworks */,
+				6F3B45E920271B3200834EF4 /* ARVideoKit.framework in Frameworks */,
+				6FF2C7451FA322FA00895265 /* SceneKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +141,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F3B45E420271B2900834EF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F3B45E820271B2900834EF4 /* ARVideoKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FD6A117202449A0003F82A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6A11820244A1F003F82A8 /* BTSceneView.h */,
+				6FD6A11920244A1F003F82A8 /* BTSceneView.m */,
+				6F76F58A2028767800C8CE44 /* ARManualDemo-Bridging-Header.h */,
+				6F76F58D20287C1700C8CE44 /* BtSceneView.swift */,
+				6F8CBE75202B139100FC50AA /* MyARSceneView.h */,
+				6F8CBE76202B139100FC50AA /* MyARSceneView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6FD6A11B20244B29003F82A8 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6A120202456A9003F82A8 /* CameraOperationDelegate.h */,
+				6F8CBE78202C41A500FC50AA /* ArViewDelegate.h */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
 		6FF2C6FC1FA30F7800895265 = {
 			isa = PBXGroup;
 			children = (
+				6F3B45E320271B2900834EF4 /* ARVideoKit.xcodeproj */,
+				6FF2C73A1FA30FC100895265 /* Storyboard.storyboard */,
 				6FF2C7071FA30F7800895265 /* ARManualDemo */,
 				6FF2C7201FA30F7800895265 /* ARManualDemoTests */,
 				6FF2C72B1FA30F7800895265 /* ARManualDemoUITests */,
 				6FF2C7061FA30F7800895265 /* Products */,
+				6FF2C7411FA322C100895265 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +197,24 @@
 		6FF2C7071FA30F7800895265 /* ARManualDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6FD6A11B20244B29003F82A8 /* Delegates */,
+				6FD6A117202449A0003F82A8 /* Views */,
 				6FF2C7081FA30F7800895265 /* AppDelegate.h */,
 				6FF2C7091FA30F7800895265 /* AppDelegate.m */,
 				6FF2C70B1FA30F7800895265 /* ViewController.h */,
 				6FF2C70C1FA30F7800895265 /* ViewController.m */,
 				6FF2C70E1FA30F7800895265 /* Main.storyboard */,
+				6FF2C7471FA32E9200895265 /* art.scnassets */,
 				6FF2C7111FA30F7800895265 /* Assets.xcassets */,
 				6FF2C7131FA30F7800895265 /* LaunchScreen.storyboard */,
 				6FF2C7161FA30F7800895265 /* Info.plist */,
 				6FF2C7171FA30F7800895265 /* main.m */,
+				6FF2C73C1FA3108400895265 /* ARSCNViewController.h */,
+				6FF88F2E202714FB00C83BF1 /* ARSCNViewController.m */,
+				6FF2C73E1FA3108400895265 /* ARSCNViewController.xib */,
+				6F76F58F202884E500C8CE44 /* SecondARViewController.h */,
+				6F76F590202884E500C8CE44 /* SecondARViewController.m */,
+				6F76F591202884E500C8CE44 /* SecondARViewController.xib */,
 			);
 			path = ARManualDemo;
 			sourceTree = "<group>";
@@ -132,6 +237,15 @@
 			path = ARManualDemoUITests;
 			sourceTree = "<group>";
 		};
+		6FF2C7411FA322C100895265 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FF2C7441FA322EF00895265 /* SceneKit.framework */,
+				6FF2C7421FA322C100895265 /* ARKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,10 +256,13 @@
 				6FF2C7011FA30F7800895265 /* Sources */,
 				6FF2C7021FA30F7800895265 /* Frameworks */,
 				6FF2C7031FA30F7800895265 /* Resources */,
+				6FD6A1472026F62C003F82A8 /* Embed Frameworks */,
+				6FF88F30202717D200C83BF1 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6F3B45EC20271B3200834EF4 /* PBXTargetDependency */,
 			);
 			name = ARManualDemo;
 			productName = ARManualDemo;
@@ -199,6 +316,7 @@
 				TargetAttributes = {
 					6FF2C7041FA30F7800895265 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					6FF2C71C1FA30F7800895265 = {
@@ -224,6 +342,12 @@
 			mainGroup = 6FF2C6FC1FA30F7800895265;
 			productRefGroup = 6FF2C7061FA30F7800895265 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6F3B45E420271B2900834EF4 /* Products */;
+					ProjectRef = 6F3B45E320271B2900834EF4 /* ARVideoKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6FF2C7041FA30F7800895265 /* ARManualDemo */,
@@ -233,12 +357,26 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		6F3B45E820271B2900834EF4 /* ARVideoKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ARVideoKit.framework;
+			remoteRef = 6F3B45E720271B2900834EF4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		6FF2C7031FA30F7800895265 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6FF2C7151FA30F7800895265 /* LaunchScreen.storyboard in Resources */,
+				6F76F593202884E500C8CE44 /* SecondARViewController.xib in Resources */,
+				6FF2C7481FA32E9200895265 /* art.scnassets in Resources */,
+				6FF2C73B1FA30FC100895265 /* Storyboard.storyboard in Resources */,
+				6FF2C7401FA3108400895265 /* ARSCNViewController.xib in Resources */,
 				6FF2C7121FA30F7800895265 /* Assets.xcassets in Resources */,
 				6FF2C7101FA30F7800895265 /* Main.storyboard in Resources */,
 			);
@@ -260,6 +398,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6FF88F30202717D200C83BF1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				/Users/fotoable/Documents/IOS/ARManualDemo/ARVideoKit.framework,
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6FF2C7011FA30F7800895265 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -267,6 +422,11 @@
 			files = (
 				6FF2C70D1FA30F7800895265 /* ViewController.m in Sources */,
 				6FF2C7181FA30F7800895265 /* main.m in Sources */,
+				6F76F592202884E500C8CE44 /* SecondARViewController.m in Sources */,
+				6FD6A11A20244A1F003F82A8 /* BTSceneView.m in Sources */,
+				6F8CBE77202B139100FC50AA /* MyARSceneView.m in Sources */,
+				6F76F58E20287C1700C8CE44 /* BtSceneView.swift in Sources */,
+				6FF88F2F202714FB00C83BF1 /* ARSCNViewController.m in Sources */,
 				6FF2C70A1FA30F7800895265 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +450,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6F3B45EC20271B3200834EF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARVideoKit;
+			targetProxy = 6F3B45EB20271B3200834EF4 /* PBXContainerItemProxy */;
+		};
 		6FF2C71F1FA30F7800895265 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6FF2C7041FA30F7800895265 /* ARManualDemo */;
@@ -429,12 +594,22 @@
 		6FF2C7321FA30F7800895265 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99T3L5AJF9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRC_ROOT)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ARManualDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fotoable.ARManualDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fotoable.ARManualDemo.x;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARManualDemo/ARManualDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -442,12 +617,21 @@
 		6FF2C7331FA30F7800895265 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99T3L5AJF9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRC_ROOT)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ARManualDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fotoable.ARManualDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fotoable.ARManualDemo.x;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARManualDemo/ARManualDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -455,6 +639,7 @@
 		6FF2C7351FA30F7800895265 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ARManualDemoTests/Info.plist;
@@ -469,6 +654,7 @@
 		6FF2C7361FA30F7800895265 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ARManualDemoTests/Info.plist;
@@ -483,6 +669,7 @@
 		6FF2C7381FA30F7800895265 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ARManualDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -496,6 +683,7 @@
 		6FF2C7391FA30F7800895265 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ARManualDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
