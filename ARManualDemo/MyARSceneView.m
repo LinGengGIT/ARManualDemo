@@ -42,7 +42,6 @@
     
     prevPos = [self add:pointOfView.position and:[self add:pointIn3D and:[self multiplicate:dir and:0.1]]];
     
-    NSLog(@"");
 
 }
 
